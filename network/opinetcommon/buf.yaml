@@ -16,3 +16,8 @@ lint:
     - ENUM_ZERO_VALUE_SUFFIX
     # disabled comment checking - todo: enable and resolve these errors
     - COMMENT_ONEOF
+breaking:
+  use:
+    - FILE
+  ignore:
+    - google/api/client.proto

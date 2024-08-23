@@ -40,6 +40,13 @@ buflint:
 		-w /out \
 		bufbuild/buf lint
 
+bufbreak:
+	docker run --rm \
+		-v "${PWD}/../opinetcommon":/opinnetcommon \
+		-v "${PWD}":/out \
+		-w /out \
+		bufbuild/buf breaking --against 'https://github.com/opiproject/opi-api.git#branch=main,subdir=network/evpn-gw'
+
 bufgen:
 	docker run --rm \
 		-v "${PWD}/../opinetcommon":/opinnetcommon \

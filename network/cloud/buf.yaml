@@ -20,4 +20,8 @@ lint:
     - COMMENT_MESSAGE
     - COMMENT_FIELD
     - COMMENT_ONEOF
-     
+breaking:
+  use:
+    - FILE
+  ignore:
+    - google/api/client.proto
